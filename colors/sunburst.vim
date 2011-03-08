@@ -54,6 +54,11 @@ hi Title  guifg=#f8f8f8 guibg=NONE gui=bold
 hi Todo  guifg=#636363 guibg=NONE gui=inverse,bold,italic
 hi Type  guifg=#88bdfe guibg=NONE gui=NONE
 hi Underlined  guifg=NONE guibg=NONE gui=underline
+
+"Local colors
+hi Parens guifg=#FFDDBB
+
+" Ruby
 hi rubyClass  guifg=#e28964 guibg=NONE gui=NONE
 hi rubyFunction  guifg=#88bdfe guibg=NONE gui=NONE
 hi rubyInterpolationDelimiter  guifg=NONE guibg=NONE gui=NONE
@@ -85,9 +90,14 @@ hi htmlEndTag  guifg=#87bdfd guibg=NONE gui=NONE
 hi htmlTagName  guifg=#87bdfd guibg=NONE gui=NONE
 hi htmlArg  guifg=#87bdfd guibg=NONE gui=NONE
 hi htmlSpecialChar  guifg=#3387cc guibg=NONE gui=NONE
+
+hi link javascriptNumber Number
+hi javascriptIdentifier guifg=#4C9EE5
 hi javaScriptFunction  guifg=#99cf4f guibg=NONE gui=NONE
+hi link javaScriptParens Parens
+hi link javaScriptBraces Parens
 hi javaScriptRailsFunction  guifg=#dad085 guibg=NONE gui=NONE
-hi javaScriptBraces  guifg=NONE guibg=NONE gui=NONE
+
 hi yamlKey  guifg=#88bdfe guibg=NONE gui=NONE
 hi yamlAnchor  guifg=#3e87e2 guibg=NONE gui=NONE
 hi yamlAlias  guifg=#3e87e2 guibg=NONE gui=NONE

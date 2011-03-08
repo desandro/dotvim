@@ -3,11 +3,19 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-colorscheme blackboard
+colorscheme sunburst
 set guifont=Monaco:h12
 set linespace=2
 set number
 set guioptions-=T
+set hlsearch
+
+" Whitespace stuff
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set listchars=tab:▸\ ,eol:¬,trail:·
 
 imap <C-Space> <Esc>
 
@@ -29,3 +37,13 @@ if has("autocmd")
 endif
 
 filetype plugin on
+
+" Show syntax highlighting groups for word under cursor
+" http://vimcasts.org/episodes/creating-colorschemes-for-vim/
+nmap <C-S-P> :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
