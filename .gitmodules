@@ -1,0 +1,3 @@
+[submodule "bundle/blackboard"]
+	path = bundle/blackboard
+	url = https://github.com/nelstrom/vim-blackboard.git
