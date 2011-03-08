@@ -1,3 +1,6 @@
 [submodule "bundle/blackboard"]
 	path = bundle/blackboard
 	url = https://github.com/nelstrom/vim-blackboard.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = git://github.com/scrooloose/nerdcommenter.git
